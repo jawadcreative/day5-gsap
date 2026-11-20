@@ -1,6 +1,10 @@
+import Hero from "./components/Hero"
+
 const App = () => {
   return (
-    <div>App</div>
+    <main>
+      <Hero />
+    </main>
   )
 }
 
