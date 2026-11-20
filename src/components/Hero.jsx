@@ -36,15 +36,15 @@ const Hero = () => {
   }, [])
   return (
     <section className="h-screen w-full flex items-center justify-center bg-black">
-      <div ref={con} className="h-[80vh] w-[90%] bg-olive-100 rounded-4xl flex flex-col gap-6 items-center justify-center p-6">
+      <div ref={con} className="h-[80%] w-[90%] bg-olive-100 rounded-4xl flex flex-col gap-6 items-center justify-center p-6">
         <div className="h-24 w-24">
           <img src="/img/main.avif" alt="cartoon" className="h-full w-full object-cover object-center" />
         </div>
         <div className="overflow-hidden">
-          <p ref={para1} className="text-xl text-gray-500">Tasks, Notes & Calendar. One beautiful Mac app.</p>
+          <p ref={para1} className="text-xl text-gray-500 max-sm:text-xs">Tasks, Notes & Calendar. One beautiful Mac app.</p>
         </div>
-        <h1 ref={heading} className="leading-[80px] text-8xl font-bold text-center">Your day, beautifully <br /> connected.</h1>
-        <p ref={para2} className="text-xl leading-none text-center text-gray-500 overflow-hidden">Meet Woday, your all-in-one planner for Mac. Bring your calendar, tasks, reminders, <br /> and notes together in one beautifully simple workspace.</p>
+        <h1 ref={heading} className="leading-none text-8xl font-bold text-center text-[clamp(2rem,8vw,8rem)]">Your day, beautifully <br /> connected.</h1>
+        <p ref={para2} className="text-xl leading-none text-center text-gray-500 overflow-hidden max-sm:text-xs">Meet Woday, your all-in-one planner for Mac. Bring your calendar, tasks, reminders, <br /> and notes together in one beautifully simple workspace.</p>
         <button className="bg-black cursor-pointer text-white h-fit rounded-full flex gap-3 items-center px-6 py-3"><span><img className="h-4 w-4 invert-100" src="/img/apple-fill.svg" alt="apple" /></span>Get Woday for Mac</button>
       </div>
     </section>

@@ -49,15 +49,15 @@ const Cards = () => {
         })
     }, { scope: con })
     return (
-        <section ref={con} className="h-screen w-full flex items-center justify-center gap-12 p-6 bg-amber-50 overflow-hidden">
+        <section ref={con} className="sm:h-screen h-full w-full flex items-center justify-center gap-12 p-6 bg-amber-50 overflow-hidden max-sm:flex-col">
             {cars.map((item, i) => (
-                <div key={i} className="card flex flex-col gap-6 w-[30%] border-8 border-white bg-gray-200 rounded-2xl p-2">
+                <div key={i} className="card flex flex-col gap-6 w-full sm:w-[30%]  border-8 border-white bg-gray-200 rounded-2xl p-2">
                     <div className="h-[40vh] w-full rounded-2xl overflow-hidden">
                         <img src={item.image} alt={item.brand} className="h-full w-full object-cover object-left" />
                     </div>
                     <div className="flex gap-3">
                         {item.specs.map((item, i) => (
-                            <p className="px-4 py-1 rounded-full bg-black text-white">{item}</p>
+                            <p className="px-4 py-1 rounded-full max-sm:text-xs bg-black text-white">{item}</p>
                         ))}
                     </div>
                     <div className="flex flex-col gap-2">
