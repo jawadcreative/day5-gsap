@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { SplitText } from "gsap/SplitText"
+gsap.registerPlugin(SplitText)
 import { useRef } from "react"
 
 const Hero = () => {
@@ -14,7 +15,7 @@ const Hero = () => {
     let headSplt = SplitText.create(head, { type: 'chars, lines', linesClass: 'overflow-hidden' })
     let para2Split = SplitText.create(para, { type: 'lines', linesClass: 'overflow-hidden' })
     let tl = gsap.timeline()
-    
+
     tl.from(para1.current, {
       yPercent: 100,
     })
