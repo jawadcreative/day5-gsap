@@ -57,7 +57,7 @@ const Cards = () => {
                     </div>
                     <div className="flex gap-3">
                         {item.specs.map((item, i) => (
-                            <p className="px-4 py-1 rounded-full max-sm:text-xs bg-black text-white">{item}</p>
+                            <p key={i} className="px-4 py-1 rounded-full max-sm:text-xs bg-black text-white">{item}</p>
                         ))}
                     </div>
                     <div className="flex flex-col gap-2">
